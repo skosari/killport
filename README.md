@@ -112,6 +112,10 @@ killport sniff 443               # capture live traffic on a port
 killport ssh                     # generate token for zero-config SSH setup
 killport ssh ks:<token>          # accept token — passwordless SSH in one step
 killport ssh mini                # SSH to a saved machine by name
+killport shutdown                # scan network and pick a machine to shut down
+killport shutdown 192.168.1.10   # shut down a machine by IP
+killport shutdown mini           # shut down a saved host by name
+killport shutdown list           # show all saved shutdown hosts
 killport wol                     # wake a machine on your LAN
 killport attack 192.168.1.10     # AI pentest: scan + analyze + report
 killport vuln 192.168.1.10:22    # detect CVEs for a running service
